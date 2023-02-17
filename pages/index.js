@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <div className={homeStyles.homeLayout}>
       <section className={utilStyles.headingMd}>
-        <p><Link href="https://github.com/inherentspice/VKTest-Django-Frontend">From automated chatbots trained with scraped reddit comments</Link>, to <Link href="https://hig.fly.dev/">depicting our collective mental state on cans of beer </Link>— I flat out love building cool stuff for the web.</p>
+        <p>From automated chatbots trained with scraped reddit comments, to depicting our collective mental state on cans of beer — I flat out love building cool stuff for the web.</p>
       </section>
       <div className={homeStyles.socialCont}>
         <Link href="https://github.com/inherentspice" target="_blank">

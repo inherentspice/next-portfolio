@@ -25,8 +25,8 @@ export default function Layout({ children, home }) {
               priority
               src="/images/profile.jpg"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={250}
+              width={250}
               alt=""
             />
             <h1 className={utilStyles.heading2Xl}>Hi, I am <span className={utilStyles.headingBreakout}>Stephen Lehane Smith</span>. Front-end Developer Based in London.</h1>
