@@ -1,0 +1,105 @@
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  z-index: 1;
+  text-align: right;
+  opacity: 0;
+  animation: opacity 0.5s ease-in-out;
+}
+
+.menu li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.menu a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.menu a:hover {
+  color: var(--secondary-color);
+}
+
+.menuButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.menuIcon {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin: 2px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.menuIcon:before, .menuIcon:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background-color: #333;
+  transition: all 0.2s ease-in-out;
+}
+
+.menuIcon:before {
+  top: -8px;
+  left: 0;
+}
+
+.menuIcon:after {
+  bottom: -8px;
+  left: 0;
+}
+
+.menuOpen {
+  display: flex;
+  opacity: 1;
+  animation: opacity 0.5s ease-in-out;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.menuToggle .menuIcon {
+  transform: rotate(45deg);
+}
+
+.menuToggle .menuIcon:nth-child(2) {
+  opacity: 0;
+}
+
+.menuToggle .menuIcon:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+/* @media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    position: static;
+    padding: 0;
+  }
+} */
