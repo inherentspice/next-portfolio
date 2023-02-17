@@ -27,17 +27,16 @@
 .menuButton {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
-  width: 40px;
   height: 40px;
+  gap: 0.5rem;
 }
 
 .menuIcon {
@@ -85,7 +84,7 @@
 }
 
 .menuToggle .menuIcon {
-  transform: rotate(45deg);
+  transform: rotate(90deg);
 }
 
 .menuToggle .menuIcon:nth-child(2) {
@@ -93,7 +92,7 @@
 }
 
 .menuToggle .menuIcon:nth-child(3) {
-  transform: rotate(-45deg);
+  transform: rotate(-90deg);
 }
 
 /* @media only screen and (min-width: 768px) {

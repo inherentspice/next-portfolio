@@ -13,6 +13,7 @@ export default function HamburgerMenu() {
     <>
       <button className={`${hamburgerStyles.menuButton} ${menuOpen ? hamburgerStyles.menuToggle : ''}`} onClick={handleMenuClick}>
         <span className={hamburgerStyles.menuIcon}></span>
+        <p>Menu</p>
       </button>
       <nav className={`${hamburgerStyles.menu} ${menuOpen ? hamburgerStyles.menuOpen : ''}`}>
         <ul>
