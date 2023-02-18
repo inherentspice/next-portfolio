@@ -4,6 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import HamburgerMenu from './hamburgerMenu';
+import ThemeToggle from './themeToggle';
 
 export const siteTitle = 'Stephen Lehane Smith Portfolio';
 
@@ -47,6 +48,7 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <HamburgerMenu />
+      <ThemeToggle />
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

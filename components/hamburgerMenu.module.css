@@ -42,7 +42,7 @@
 .menuIcon {
   width: 20px;
   height: 2px;
-  background-color: #333;
+  background-color: var(--primary-color);
   margin: 2px;
   transition: all 0.2s ease-in-out;
   position: relative;
@@ -53,7 +53,7 @@
   position: absolute;
   width: 20px;
   height: 4px;
-  background-color: #333;
+  background-color: var(--primary-color);
   transition: all 0.2s ease-in-out;
 }
 
