@@ -13,3 +13,9 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.altHeader {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
