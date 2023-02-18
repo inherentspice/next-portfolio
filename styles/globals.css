@@ -24,12 +24,14 @@ body[data-theme="light"] {
   --primary-color: #000000;
   --background-color: #ffffff;
   --secondary-color: #da13da;
+  --border-color: rgba(0, 0, 0, 0.3);
 }
 
 body[data-theme="dark"] {
   --primary-color: #ffffff;
   --background-color: #000000eb;
   --secondary-color: #ec43ec;
+  --border-color: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -41,6 +43,10 @@ a:hover {
   color: var(--secondary-color);
 }
 
+p {
+  font-size: 18px;
+  line-height: 1.5rem;
+}
 a,
 p,
 h1,
@@ -52,6 +58,9 @@ h6 {
   color: var(--primary-color);
 }
 
+h1 {
+  margin: 2rem 0;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

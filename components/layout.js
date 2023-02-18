@@ -46,7 +46,7 @@ export default function Layout({ children, home }) {
                 height={50}
                 width={50}
                 alt=""
-                area-label="Links to home page"
+                aria-label="Links to home page"
               />
             </Link>
           </div>
