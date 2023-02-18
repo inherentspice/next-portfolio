@@ -2,19 +2,10 @@ import toggleStyles from "./themeToggle.module.css";
 import { useState, useEffect } from "react";
 
 export default function ThemeToggle() {
-  const [activeTheme, setActiveTheme] = useState(undefined);
+  const [activeTheme, setActiveTheme] = useState(document.body.dataset.theme);
   const inactiveTheme = activeTheme === "light" ? "dark" : "light";
 
-
-  useEffect(() => {
-    const savedTheme = window.localStorage.getItem("theme");
-    if (activeTheme === undefined && savedTheme) {
-      document.body.dataset.theme = savedTheme;
-      savedTheme && setActiveTheme(savedTheme);
-      return
-    } else if (activeTheme === undefined) {
-      setActiveTheme("dark");
-    }
+    useEffect(() => {
     document.body.dataset.theme = activeTheme;
     window.localStorage.setItem("theme", activeTheme);
   }, [activeTheme]);
