@@ -19,7 +19,11 @@ export default function Home() {
         <p>From automated chatbots trained with scraped reddit comments, to depicting our collective mental state on cans of beer — I flat out love building cool stuff for the web.</p>
       </section>
       <div className={homeStyles.socialCont}>
-        <Link href="https://github.com/inherentspice" target="_blank">
+        <Link
+          href="https://github.com/inherentspice"
+          target="_blank"
+          aria-label="Link to github profile"
+        >
           <Image
             src="/images/github-mark.svg"
             height={30}
@@ -27,7 +31,11 @@ export default function Home() {
             alt=""
           />
         </Link>
-        <Link href="https://www.linkedin.com/in/stephen-lehane-smith/" target="_blank">
+        <Link
+          href="https://www.linkedin.com/in/stephen-lehane-smith/"
+          target="_blank"
+          aria-label="Link to linkedin profile"
+        >
           <Image
             src="/images/linkedin.svg"
             height={30}

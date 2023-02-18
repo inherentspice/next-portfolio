@@ -1,10 +1,14 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import HamburgerMenu from './hamburgerMenu';
-import ThemeToggle from './themeToggle';
+const ThemeToggle = dynamic(() => import("../components/themeToggle"), {
+  ssr: false,
+})
+// import ThemeToggle from './themeToggle';
 
 export const siteTitle = 'Stephen Lehane Smith Portfolio';
 
@@ -42,6 +46,7 @@ export default function Layout({ children, home }) {
                 height={50}
                 width={50}
                 alt=""
+                area-label="Links to home page"
               />
             </Link>
           </div>
