@@ -13,3 +13,7 @@
 .socialCont:hover {
   fill: var(--secondary-color);
 }
+
+.reactIcons {
+  color: inherit;
+}

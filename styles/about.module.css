@@ -58,11 +58,11 @@
 .skillCont:hover {
   color: var(--secondary-color);
 }
+
 .skillCont>p {
   color: inherit;
 }
 
 .reactIcons {
   color: inherit;
-  size: 100px;
 }

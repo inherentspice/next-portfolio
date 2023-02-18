@@ -61,6 +61,11 @@ h6 {
 h1 {
   margin: 2rem 0;
 }
+
+.reactIcons {
+  color: inherit;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
