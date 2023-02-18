@@ -32,30 +32,25 @@ export default function Layout({ children, home }) {
             <h1 className={utilStyles.heading2Xl}>Hi, I am <span className={utilStyles.headingBreakout}>Stephen Lehane Smith</span>. Front-end Developer Based in London.</h1>
           </>
         ) : (
-          <>
+          <div className={styles.altHeader}>
             <Link href="/">
               <Image
                 priority
                 src="/images/profile.jpg"
                 className={utilStyles.borderCircle}
-                height={108}
-                width={108}
+                height={50}
+                width={50}
                 alt=""
               />
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.headingBreakout}>
-                Stephen Lehane Smith
-              </Link>
-            </h2>
-          </>
+          </div>
         )}
       </header>
       <HamburgerMenu />
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+          <Link href="/">← home</Link>
         </div>
       )}
     </div>
