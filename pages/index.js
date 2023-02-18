@@ -2,6 +2,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
+import { IconContext } from "react-icons";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+
 import utilStyles from '../styles/utils.module.css';
 import homeStyles from "../styles/Home.module.css";
 import Layout, { siteTitle } from '../components/layout';
@@ -24,24 +27,22 @@ export default function Home() {
           target="_blank"
           aria-label="Link to github profile"
         >
-          <Image
-            src="/images/github-mark.svg"
-            height={30}
-            width={30}
-            alt=""
-          />
+          <IconContext.Provider
+              value={{ className: homeStyles.reactIcons, size: "50px"}}
+            >
+              <FaGithub/>
+            </IconContext.Provider>
         </Link>
         <Link
           href="https://www.linkedin.com/in/stephen-lehane-smith/"
           target="_blank"
           aria-label="Link to linkedin profile"
         >
-          <Image
-            src="/images/linkedin.svg"
-            height={30}
-            width={30}
-            alt=""
-          />
+          <IconContext.Provider
+              value={{ className: homeStyles.reactIcons, size: "50px"}}
+            >
+              <FaLinkedin/>
+            </IconContext.Provider>
         </Link>
       </div>
     </div>
