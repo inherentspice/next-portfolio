@@ -14,11 +14,15 @@ export default function ThemeToggle() {
     <form action="#">
       <label className={toggleStyles.switch}>
         <input
-        type="checkbox"
-        onChange={() => setActiveTheme(inactiveTheme)}
-        checked={activeTheme === "dark"}
-      />
-        <span className={`${toggleStyles.slider} ${toggleStyles.round}`}></span>
+          aria-label={`Change to ${inactiveTheme} mode`}
+          type="checkbox"
+          onChange={() => setActiveTheme(inactiveTheme)}
+          checked={activeTheme === "dark"}
+        />
+        <span
+          className={`${toggleStyles.slider} ${toggleStyles.round}`}
+          aria-label={`Change to ${inactiveTheme} mode`}
+        ></span>
       </label>
     </form>
   )

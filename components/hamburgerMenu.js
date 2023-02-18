@@ -11,7 +11,11 @@ export default function HamburgerMenu() {
 
   return (
     <>
-      <button className={`${hamburgerStyles.menuButton} ${menuOpen ? hamburgerStyles.menuToggle : ''}`} onClick={handleMenuClick}>
+      <button
+        className={`${hamburgerStyles.menuButton} ${menuOpen ? hamburgerStyles.menuToggle : ''}`}
+        onClick={handleMenuClick}
+        aria-label="Open the navigation menu"
+      >
         <span className={hamburgerStyles.menuIcon}></span>
         <p>Menu</p>
       </button>
