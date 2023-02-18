@@ -54,3 +54,13 @@
 .lightText {
   color: #666;
 }
+
+.errorMessage {
+  color: white;
+  margin-top: 0;
+  background-color: var(--color-red);
+  padding: 0 1rem;
+  max-width: fit-content;
+  border-radius: 124px;
+  margin: 1rem 0;
+}
