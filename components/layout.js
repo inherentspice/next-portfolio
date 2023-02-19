@@ -8,7 +8,6 @@ import HamburgerMenu from './hamburgerMenu';
 const ThemeToggle = dynamic(() => import("../components/themeToggle"), {
   ssr: false,
 })
-// import ThemeToggle from './themeToggle';
 
 export const siteTitle = 'Stephen Lehane Smith Portfolio';
 
@@ -35,25 +34,16 @@ export default function Layout({ children, home }) {
               alt=""
             />
             <h1 className={utilStyles.heading2Xl}>Hi, I am <span className={utilStyles.headingBreakout}>Stephen Lehane Smith</span>. Front-end Developer Based in London.</h1>
+            <HamburgerMenu />
+            <ThemeToggle />
           </>
         ) : (
           <div className={styles.altHeader}>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={50}
-                width={50}
-                alt=""
-                aria-label="Links to home page"
-              />
-            </Link>
+            <HamburgerMenu />
+            <ThemeToggle />
           </div>
         )}
       </header>
-      <HamburgerMenu />
-      <ThemeToggle />
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

@@ -50,3 +50,9 @@
   display: flex;
   gap: 0.5rem;
 }
+
+@media (max-width: 950px) {
+  .nameEmailCont {
+    flex-direction: column;
+  }
+}
