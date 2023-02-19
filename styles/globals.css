@@ -87,6 +87,7 @@ input {
 textarea {
   outline-color: var(--secondary-color);
   height: 10em;
+  width: 610px;
   padding: 1.25rem;
   border-radius: 32px 32px 32px 32px;
 }

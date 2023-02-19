@@ -1,10 +1,11 @@
 import React, { useCallback } from "react";
 import { useForm } from 'react-hook-form';
+import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import Layout from "@/components/layout";
 import styles from "../../styles/contact.module.css";
 import utilStyles from "../../styles/utils.module.css";
-import { FaUniversity, FaSearchLocation, } from "react-icons/fa";
+import { FaUniversity, FaSearchLocation, FaLinkedin, FaGithub} from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { IconContext } from "react-icons";
 
@@ -64,6 +65,30 @@ export default function Contact() {
             <FaUniversity/>
           </IconContext.Provider>
           <p>Education: Queensland University of Technology</p>
+        </div>
+        <div className={`${styles.contactItem} ${styles.extLinks}`}>
+          <Link
+            href="https://github.com/inherentspice"
+            target="_blank"
+            aria-label="Link to github profile"
+          >
+            <IconContext.Provider
+              value={{ className: styles.reactIcons, size: "50px"}}
+            >
+              <FaGithub/>
+            </IconContext.Provider>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/stephen-lehane-smith/"
+            target="_blank"
+            aria-label="Link to linkedin profile"
+          >
+            <IconContext.Provider
+              value={{ className: styles.reactIcons, size: "50px"}}
+            >
+              <FaLinkedin/>
+            </IconContext.Provider>
+          </Link>
         </div>
       </div>
       <form id='contact-form' onSubmit={handleSubmit(sendEmail)}>

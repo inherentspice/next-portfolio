@@ -13,20 +13,22 @@
   color: var(--secondary-color);
 }
 
+.extLinks {
+  margin: 1.25rem 0;
+}
+
 .reactIcons {
   color: inherit;
 }
 
 .formSubmit {
   width: 6em;
-  text-align: center;
   padding: 0;
   background-color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--background-color);
   border: none;
-  align-self: flex-end;
   cursor: pointer;
 }
 
