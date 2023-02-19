@@ -37,8 +37,8 @@ export default function Contact() {
       <div class={styles.introContact}>
         <h1>Contact Me</h1>
         <p>
-          I&apos;m interested in <span>junior front-end developer</span> jobs. However, if you have other requests or questions, don’t hesitate to reach out.
-          Send me an e-mail or message me on LinkedIn and I&apos;ll get back to you.
+          I&apos;m interested in junior front-end developer jobs. However, if you have other requests or questions, don&apos;t hesitate to reach out.
+          Send me an e-mail, fill in the form below, or message me on LinkedIn and I&apos;ll get back to you.
         </p>
       </div>
       <div className={styles.contactItemsCont}>
