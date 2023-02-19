@@ -34,7 +34,7 @@ export default function Contact() {
   }
   return (
     <Layout>
-      <div class={styles.introContact}>
+      <div className={styles.introContact}>
         <h1>Contact Me</h1>
         <p>
           I&apos;m interested in junior front-end developer jobs. However, if you have other requests or questions, don&apos;t hesitate to reach out.

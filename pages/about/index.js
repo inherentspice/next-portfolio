@@ -100,28 +100,28 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div class={styles.breakOutAbout}>
-          <div class={styles.aboutItem}>
-            <div class={styles.aboutTextCont}>
-              <p class={utilStyles.headingLg}>10+</p>
+      <div className={styles.breakOutAbout}>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutTextCont}>
+              <p className={utilStyles.headingLg}>10+</p>
               <p>Projects Completed</p>
             </div>
           </div>
-          <div class={styles.aboutItem}>
-            <div class={styles.aboutTextCont}>
-              <p class={utilStyles.headingLg}>1</p>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutTextCont}>
+              <p className={utilStyles.headingLg}>1</p>
               <p>Data Science Bootcamp</p>
             </div>
           </div>
-          <div class={styles.aboutItem}>
-            <div class={styles.aboutTextCont}>
-              <p class={utilStyles.headingLg}>1.4k+</p>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutTextCont}>
+              <p className={utilStyles.headingLg}>1.4k+</p>
               <p>Github Commits</p>
             </div>
           </div>
-          <div class={styles.aboutItem}>
-            <div class={styles.aboutTextCont}>
-              <p class={utilStyles.headingLg}>5+</p>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutTextCont}>
+              <p className={utilStyles.headingLg}>5+</p>
               <p>Weeping Bouts During The Iron Giant</p>
             </div>
           </div>
