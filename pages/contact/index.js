@@ -67,7 +67,7 @@ export default function Contact() {
         </div>
       </div>
       <form id='contact-form' onSubmit={handleSubmit(sendEmail)}>
-        <div className="name-email-cont">
+        <div className={styles.nameEmailCont}>
           <div className="name-cont">
             <input placeholder='Name' {...register('name', {
               required: {

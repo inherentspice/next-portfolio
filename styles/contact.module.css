@@ -43,3 +43,8 @@
     background-color: var(--button-hover-color);
   }
 }
+
+.nameEmailCont {
+  display: flex;
+  gap: 0.5rem;
+}
