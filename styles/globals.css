@@ -23,10 +23,12 @@ body[data-theme="light"] {
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
   --primary-color: #000000;
   --background-color: #ffffff;
-  --color-red: rgb(255, 93, 93);
+  --color-red: #ff5d5d;
   --secondary-color: #da13da;
   --button-hover-color: #a8a7a7;
   --border-color: rgba(0, 0, 0, 0.3);
+  --breakout-box-color: #fffaff;
+  --small-text-color: rgb(56, 56, 56);
 }
 
 body[data-theme="dark"] {
@@ -34,8 +36,10 @@ body[data-theme="dark"] {
   --background-color: #000000eb;
   --secondary-color: #ec43ec;
   --button-hover-color: #cacaca;
-  --color-red: rgb(255, 93, 93);
+  --color-red: #ff5d5d;
   --border-color: rgba(255, 255, 255, 0.2);
+  --breakout-box-color: #090c14;
+  --small-text-color: rgb(238, 238, 238);
 }
 
 
@@ -52,6 +56,7 @@ p {
   line-height: 1.5rem;
 }
 a,
+small,
 p,
 h1,
 h2,
@@ -65,8 +70,15 @@ h6 {
 label {
   color: var(--primary-color);
 }
+
 h1 {
   margin: 2rem 0;
+}
+
+small {
+  color: var(--small-text-color);
+  margin-right: 2rem;
+  margin-top: 1rem;
 }
 
 form {
