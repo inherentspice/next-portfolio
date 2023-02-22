@@ -3,8 +3,10 @@ import Link from "next/link"
 import Layout from "@/components/layout";
 import styles from "../../styles/portfolio.module.css";
 import { MdOutlineWeb, MdOpenInNew } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaReact } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { IoLogoCss3, IoLogoHtml5, IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
+import { SiExpress, SiMongodb, SiWebpack } from "react-icons/si";
 
 export default function Portfolio() {
   return(
@@ -48,10 +50,40 @@ export default function Portfolio() {
             For the photo gallery and admin page, we used an Express backend with MongoDB and Cloudinary to upload, edit, remove, and display images.
           </p>
 
-          <small>React</small>
-          <small>MongoDB</small>
-          <small>Express</small>
-          <small>NodeJS</small>
+          <div className={styles.techCont}>
+            <div className={styles.techContItem}>
+              <small>React</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <FaReact />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>MongoDB</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <SiMongodb />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>Express</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <SiExpress />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>NodeJS</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <IoLogoNodejs />
+              </IconContext.Provider>
+            </div>
+          </div>
         </div>
         <div className={styles.projectCont}>
           <div className={styles.contHeader}>
@@ -91,11 +123,40 @@ export default function Portfolio() {
             Rather than let those feelings paint my world, I made something that would let me get a more objective picture.
             With hig, users&apos; votes combine together to make unique backgrounds and line colors for the beer can.
           </p>
-
-          <small>React</small>
-          <small>MongoDB</small>
-          <small>Express</small>
-          <small>NodeJS</small>
+          <div className={styles.techCont}>
+            <div className={styles.techContItem}>
+              <small>React</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <FaReact />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>MongoDB</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <SiMongodb />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>Express</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <SiExpress />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>NodeJS</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <IoLogoNodejs />
+              </IconContext.Provider>
+            </div>
+          </div>
         </div>
         <div className={styles.projectCont}>
           <div className={styles.contHeader}>
@@ -135,10 +196,40 @@ export default function Portfolio() {
             The aim of the project was to make a functional multi page Restaurant website using WebPack to bundle files.
             All images were generated with stable diffusion.
           </p>
-          <small>JavaScript</small>
-          <small>WebPack</small>
-          <small>CSS</small>
-          <small>HTML</small>
+          <div className={styles.techCont}>
+            <div className={styles.techContItem}>
+              <small>JavaScript</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <IoLogoJavascript />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>WebPack</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <SiWebpack />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>CSS</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <IoLogoCss3 />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>HTML</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <IoLogoHtml5 />
+              </IconContext.Provider>
+            </div>
+          </div>
         </div>
         <div className={styles.projectCont}>
           <div className={styles.contHeader}>
@@ -179,11 +270,40 @@ export default function Portfolio() {
             Users can login to their profile and find their list of notes.
             They can add new notes through an input, which they can then edit or delete all notes in their profile.
           </p>
-
-          <small>React</small>
-          <small>MongoDB</small>
-          <small>Express</small>
-          <small>NodeJS</small>
+          <div className={styles.techCont}>
+            <div className={styles.techContItem}>
+              <small>React</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <FaReact />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>MongoDB</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <SiMongodb />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>Express</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <SiExpress />
+              </IconContext.Provider>
+            </div>
+            <div className={styles.techContItem}>
+              <small>NodeJS</small>
+              <IconContext.Provider
+                value={{ className: styles.reactIcons, size: "20px"}}
+              >
+                <IoLogoNodejs />
+              </IconContext.Provider>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>

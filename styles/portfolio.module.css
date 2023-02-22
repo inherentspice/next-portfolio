@@ -45,6 +45,17 @@
   margin: 1rem 0;
 }
 
+.techCont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.techContItem {
+  display: flex;
+  gap: 0.25rem;
+  align-items: end;
+}
+
 @media (max-width: 950px) {
   .projectsCont {
     grid-template-columns: repeat(1, 1fr);
