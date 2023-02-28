@@ -13,14 +13,14 @@ export default function About() {
       <div className={styles.introAbout}>
         <h1>About</h1>
         <p>
-          Hi, I&apos;m Stephen, a front-end developer from Australia, currently based in London, UK.
+          Hi, I&apos;m Stephen, a Full Stack Engineer from Australia, currently based in London, UK.
           Committed to life-long learning, I have a passion for Javascript, React, and all things web development.
           I love reading and writing — with a bachelors and honours in creative writing and literature as proof — as well as stand-up and improv comedy.
-          I have spent my entire life learning to engangingly communicate my ideas with others, whether that be on stage as a comedian, or in my writing, or as a teaching assistant at Le Wagon, or when liasing with managers and stakeholders about my work as a front-end developer.
+          I have spent my entire life learning to engangingly communicate my ideas with others, whether that be on stage as a comedian, or in my writing, or as a teaching assistant at Le Wagon, or when liasing with managers and stakeholders about my work as a Full Stack Engineer.
         </p>
         <br/>
         <p>
-          I am currently looking for jobs as a front-end developer at companies that value team-work, communication, and continuous learning.
+          I am currently looking for jobs as a Full Stack Engineer at companies that value team-work, communication, and continuous learning.
         </p>
       </div>
       <div className={styles.skillsItemsCont}>
