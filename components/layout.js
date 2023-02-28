@@ -33,7 +33,7 @@ export default function Layout({ children, home }) {
               width={250}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}>Hi, I am <span className={utilStyles.headingBreakout}>Stephen Lehane Smith</span>. Front-end Developer Based in London.</h1>
+            <h1 className={utilStyles.heading2Xl}>Hi, I am <span className={utilStyles.headingBreakout}>Stephen Lehane Smith</span>. Full Stack Engineer Based in London.</h1>
             <HamburgerMenu />
             <ThemeToggle />
           </>
