@@ -64,3 +64,12 @@
   border-radius: 124px;
   margin: 1rem 0;
 }
+
+.successMessage {
+  color: var(--primary-color);
+  margin-top: 0;
+  font-weight: 800;
+  font-size: 2rem;
+  max-width: fit-content;
+  margin: 1rem 0;
+}

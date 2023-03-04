@@ -22,7 +22,7 @@
 }
 
 .formSubmit {
-  width: 6em;
+  width: 8em;
   padding: 0;
   background-color: var(--primary-color);
   font-size: 1.5rem;
@@ -30,6 +30,7 @@
   color: var(--background-color);
   border: none;
   cursor: pointer;
+  text-align: center;
 }
 
 .formSubmit:hover {

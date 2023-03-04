@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useForm } from 'react-hook-form';
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
@@ -12,6 +12,13 @@ import { IconContext } from "react-icons";
 
 export default function Contact() {
   const { register, handleSubmit, formState: { errors }, reset, } = useForm();
+  const [ result, setResult ] = useState("");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setResult("");
+    }, 5000);
+  }, [result]);
 
   const resetForm = useCallback(() => {
     const result = {name: "", email: "", message: ""}
@@ -20,18 +27,22 @@ export default function Contact() {
 
   const sendEmail = (data, e) => {
     e.preventDefault()
+
     emailjs.send(
       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
       data,
       process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
-
     )
-      .then(resetForm())
+      .then(() => {
+        setResult("Email sent!")
+        resetForm()
+      })
       .catch((error) => {
         console.log(error)
       })
   }
+
   return (
     <Layout>
       <div className={styles.introContact}>
@@ -124,7 +135,7 @@ export default function Contact() {
           })}/>
 
           {errors.message && <p className={utilStyles.errorMessage}>{errors.message.message}</p>}
-        <input className={styles.formSubmit} type='submit' value='Send' />
+        {result ? <input className={styles.formSubmit} value={result}/> : <input className={styles.formSubmit} type='submit' value='Send' />}
       </form>
     </Layout>
   );
